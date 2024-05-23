@@ -1,0 +1,35 @@
+{
+  "name": "oldwebtoday.js",
+  "main": "src/main.js",
+  "description": "Run old emulated browsers in your browser, connected to web archives or live web",
+  "author": "Webrecorder Software",
+  "sideEffects": [
+    "./src/main.js"
+  ],
+  "version": "1.1.0",
+  "license": "AGPL-3.0-or-later",
+  "dependencies": {
+    "@webrecorder/wabac": "^2.15.4",
+    "lit-element": "^2.4.0",
+    "sab-ring-buffer": "github:PaulKinlan/sab-ring-buffer",
+    "spectre.css": "^0.5.9",
+    "web-streams-polyfill": "^3.0.1"
+  },
+  "scripts": {
+    "build": "webpack --mode production",
+    "build-dev": "webpack --mode development",
+    "build-docs": "bundle install; bundle exec jekyll build",
+    "start-dev": "webpack serve --mode development"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^11.0.0",
+    "filemanager-webpack-plugin": "^8.0.0",
+    "node-fetch": "^2.6.1",
+    "path-browserify": "^1.0.1",
+    "raw-loader": "^4.0.2",
+    "terser-webpack-plugin": "^5.3.6",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1"
+  }
+}
