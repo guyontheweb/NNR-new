@@ -1,0 +1,185 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: lightgrey;
+  box-sizing: border-box;
+}
+
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+.owt-title {
+  font-family: cursive;
+  font-variant-caps: petite-caps;
+  word-break: break-word;
+  margin-top: 0.25em;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.icon-fill {
+  width: 24px;
+  height: 24px;
+  margin-right: 1.0em;
+}
+
+a:visited {
+  color: #5755d9;
+}
+
+.curr-browser {
+  font-size: smaller;
+  vertical-align: middle;
+  font-weight: bold;
+  display: flex;
+}
+
+.curr-browser .browser-label {
+  min-width: auto;
+  width: auto;
+  margin-left: 0.5em;
+}
+
+.curr-browser .browser-features {
+  flex-direction: row;
+  margin-left: 1.0em;
+}
+
+.curr-browser .browser-features span:not(:last-child):after {
+  content: ",";
+  margin-right: 0.5em;
+}
+
+.caret {
+  margin-top: 0.5em;
+  vertical-align: baseline;
+}
+
+#emu {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 100;
+}
+
+#browser-menu {
+  max-height: unset;
+}
+
+.browser-label {
+  margin-left: 1.5em;
+  vertical-align: super;
+  min-width: 120px;
+  width: 120px;
+}
+
+.browser-features {
+  font-size: 12px;
+  margin-right: 0.5em;
+  min-width: 80px;
+  font-variant-caps: all-small-caps;
+  display: flex;
+  flex-direction: column;
+}
+
+.err {
+  margin: 1em;
+  background: snow;
+  border: 1px solid black;
+  padding: 1em
+}
+
+.flex-form {
+  display: flex;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.form-label, .form-radio {
+  font-variant-caps: all-small-caps;
+}
+
+.space-top {
+  margin-top: 1.0rem;
+}
+
+.controls {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (min-width: 1250px) {
+  .controls {
+    max-width: 225px;
+  }
+
+  .curr-browser .browser-features {
+    display: none;
+  }
+
+  .curr-browser .browser-features span:not(:last-child):after {
+    content: "";
+    margin-right: 0;
+  }
+
+  .btn.dropdown-toggle {
+    display: inline-block;
+    max-width: 100%;
+  }
+
+  .curr-browser {
+    display: inline-block;
+  }
+}
+
+.logo {
+  max-width: 150px;
+}
+
+.by-wr {
+  margin-top: 1.0rem;
+  font-size: 0.75em;
+  text-align: center;
+}
+
+oldweb-today {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+owt-v86-browser, owt-bas-browser {
+  width: 1024px;
+  height: 768px;
+}
+
+owt-bas-browser canvas {
+  margin-top: 1em;
+  cursor: none;
+}
+
+owt-v86-browser {
+  margin-top: 1em;
+  display: flex;
+  background-color: black;
+}
+
+owt-native {
+  margin-top: 1em;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
+.native-frame {
+  width: 100%;
+  height: 100%;
+  border: 0px;
+}
+
