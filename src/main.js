@@ -304,7 +304,7 @@ class OldWebToday extends LitElement
 
     return html`
 	<center>
-<div class="window" style="width:55.5%;">
+<div class="window" style="width:80%;">
   <div class="title-bar">
     <div class="title-bar-text">Netscape Navigator Revival: Reprogrammed & Reimagined.</div>
   </div>
@@ -330,7 +330,7 @@ class OldWebToday extends LitElement
                   <input @change="${this.onUrlUpdate}" class="form-input" type="url" id="url" .value="${this.replayUrl}" placeholder="http://example.com/"></input>
                 </form>
                 ${this.showUrlUpdateMessage ? html`
-                <div class="msg" style="background-color: aliceblue">
+                <div class="msg" style="background-color: aliceblue;">
                   Home Page URL Updated!<br/>Click the <i>Home</i> button in the emulated browser to load the new URL.
                 </div>` : html``}
                 <label class="form-radio space-top">
@@ -387,10 +387,10 @@ class OldWebToday extends LitElement
               </p>
             </div>
           </div>
-          <div class="column" style="margin-right: 50%;">
+          <div class="column" style="display:flex; justify-content: center;">
                ${this.renderEmulator()}
-		  </div>
-		                      
+		                   <br>   
+</div>
                       <p>Current Browser: ${currEmu ? this.renderEmuLabel(currEmu): ''} <button class="btn btn-sm" @click="${this.onCancel}"><i class="icon icon-cross"></i>&nbsp;Stop</button>
                     <button class="btn btn-sm" @click="${(e) => window.location.reload()}"><i class="icon icon-refresh"></i>&nbsp;Reload</button></p>
                       <i class="icon icon-caret" class="caret"></i>
