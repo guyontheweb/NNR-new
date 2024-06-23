@@ -156,6 +156,7 @@ const mainConfig = (opts) => {
     },
 
     devServer: {
+	  allowedHosts: ['.ondigitalocean.app'],
       compress: true,
       port: 10001,
 	  //disableHostCheck: true,
