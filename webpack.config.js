@@ -158,7 +158,8 @@ const mainConfig = (opts) => {
     devServer: {
       compress: true,
       port: 10001,
-      open: false,
+	  //disableHostCheck: true,
+      open: true,
       static:  path.join(__dirname, "site"),
       //publicPath: "/"
     },
